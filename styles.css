@@ -23,7 +23,9 @@
 
 .card-results {
     background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));;
-    height: 300px;
+    height: 330px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 .your-result h2 {
@@ -35,22 +37,127 @@
 .great h2 {
     color: var(--White);
     text-align: center;
-    padding: 1.15rem 0rem;
+    font-size: 20px;
+    padding-top: 1.15rem;
+    padding-bottom: .55rem;
 }
 
 .result-circle {
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
+    width: 125px;
+    height: 125px;
     text-align: center;
-    border-radius: 50px;
+    border-radius: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
 }
 
 .center-dat-circle {
     display: flex;
     justify-content: center;
+}
+
+.score {
+    font-size: 50px;
+    color: var(--White);
+    font-weight: 800;
+}
+
+.result-circle p {
+    color: var(--Light-lavender);
+}
+
+.result-text {
+    padding: 0 1.5rem;
+    text-align: center;
+    color: var(--Light-lavender);
+    font-size: 12px;
+}
+
+.summary {
+    width: 85%;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.summary-head h2 {
+    padding: 1.15rem 0rem;
+}
+
+.reaction-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(0, 100%, 67%, .1);
+    height: 55px;
+    border-radius: 10px;
+}
+
+.reaction {
+    display: flex;
+    padding: .55rem;
+}
+
+.reaction p {
+    color: var(--light-red);
+    padding-left:.35rem;
+}
+
+.score-flex {
+    display: flex;
+    padding-right:1rem;
+}
+
+.score-summary {
+    color: var(--Light-lavender);
+}
+
+.memory-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(39, 100%, 56%, .1);
+    height: 55px;
+    border-radius: 10px;
+}
+
+.memory {
+    display: flex;
+    padding: .55rem;
+}
+
+.memory p {
+    color: var(--Orangey-yellow);
+    padding-left:.35rem;
+}
+
+.verbal-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(166, 100%, 37%, .1);
+    height: 55px;
+    border-radius: 10px;
+}
+
+.verbal {
+    display: flex;
+    padding: .55rem;
+}
+
+.verbal p {
+    display: flex;
+    padding: .55rem;
+    color: var(--Green-teal);
+}
+
+.visual-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(166, 100%, 37%, .1);
+    height: 55px;
+    border-radius: 10px;
 }
