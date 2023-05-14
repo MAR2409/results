@@ -78,7 +78,7 @@
 
 .summary {
     width: 85%;
-    height: 200px;
+    height: 450px;
     margin: 0 auto;
 }
 
@@ -93,6 +93,7 @@
     background-color: hsl(0, 100%, 67%, .1);
     height: 55px;
     border-radius: 10px;
+    margin-bottom: 1rem;
 }
 
 .reaction {
@@ -121,6 +122,7 @@
     background-color: hsl(39, 100%, 56%, .1);
     height: 55px;
     border-radius: 10px;
+    margin-bottom: 1rem;
 }
 
 .memory {
@@ -140,6 +142,7 @@
     background-color: hsl(166, 100%, 37%, .1);
     height: 55px;
     border-radius: 10px;
+    margin-bottom: 1rem;
 }
 
 .verbal {
@@ -157,7 +160,74 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: hsl(166, 100%, 37%, .1);
+    background-color: hsl(234, 85%, 45%, .1);
     height: 55px;
     border-radius: 10px;
+}
+
+.visual {
+    display: flex;
+    padding: .55rem;
+}
+
+.visual p {
+    display: flex;
+    padding: .55rem;
+    color: var(--Cobalt-blue);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.button button {
+    width: 100%;
+    border-radius: 50px;
+    padding: .85rem 1rem;
+    border-style: none;
+    background-color: var(--Dark-gray-blue);
+    color: var(--White);
+}
+
+.button button:hover {
+    background-color: var(--Light-royal-blue);
+    cursor: pointer;
+}
+
+@media (min-width:1024px) {
+    .card-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 1rem;
+    }
+
+    .card-results {
+       width:25%;
+       height: 485px;
+       padding: 1.4rem 2.5rem;
+       border-top-left-radius: 30px;
+    }
+    .summary {
+        width: 25%;
+        padding: 1rem;
+        height: 485px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        margin: 0px;
+    }
+
+    .result-circle {
+        width: 170px;
+        height: 170px;
+    }
+
+    .your-result h2 {
+        text-align: center;
+        color: var(--Light-lavender);
+    }
+
 }
